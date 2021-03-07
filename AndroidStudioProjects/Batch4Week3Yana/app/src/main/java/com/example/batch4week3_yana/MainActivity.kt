@@ -23,6 +23,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.util.*
 import kotlin.collections.ArrayList
+import kotlinx.android.synthetic.main.activity_main.searchView as searchView1
 import kotlin.collections.forEach as forEach1
 
 class MainActivity : AppCompatActivity() {

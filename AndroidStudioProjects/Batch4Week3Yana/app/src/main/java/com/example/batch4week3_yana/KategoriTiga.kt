@@ -20,6 +20,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.util.ArrayList
+import kotlinx.android.synthetic.main.activity_kategori_dua.searchView as searchView1
 
 class KategoriTiga : AppCompatActivity() {
     var articles : MutableList<News>? = null

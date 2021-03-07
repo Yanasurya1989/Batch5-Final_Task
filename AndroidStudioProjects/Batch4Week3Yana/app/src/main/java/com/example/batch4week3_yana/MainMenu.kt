@@ -25,5 +25,10 @@ class MainMenu : AppCompatActivity() {
             startActivity(Cat3)
         }
 
+        kategori4.setOnClickListener {
+            val Cat4 = Intent(this, KategoriEmpat::class.java)
+            startActivity(Cat4)
+        }
+
     }
 }

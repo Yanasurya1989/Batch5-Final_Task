@@ -14,8 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".KategoriTiga"></activity>
-        <!-- <searchable xmlns:android="http://schemas.android.com/apk/res/android" -->
+        <activity android:name=".KategoriEmpat"></activity>
+        <activity android:name=".KategoriTiga" /> <!-- <searchable xmlns:android="http://schemas.android.com/apk/res/android" -->
         <!-- android:hint="@string/search_hint" -->
         <!-- android:label="@string/app_name" /> -->
         <activity android:name=".KategoriDua">
