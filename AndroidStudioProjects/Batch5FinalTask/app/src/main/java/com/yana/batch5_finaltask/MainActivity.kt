@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                     })
 
                     list.adapter = adapter
+
                 }
             }
 
