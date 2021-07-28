@@ -15,6 +15,7 @@ class AdapterHewan(val datahewan: List<DataItemHewan>?, val itemClick : OnClickL
             val namaHewan = view.txtNamaHewan
             val jenis = view.txtJenis
             val caraberjalan = view.txtJalan
+            val btnHapus = view.btnHapus
         }
 
     override fun onCreateViewHolder(
@@ -31,8 +32,13 @@ class AdapterHewan(val datahewan: List<DataItemHewan>?, val itemClick : OnClickL
         holder.namaHewan.text = item?.namaHewan
         holder.jenis.text = item?.jenis
         holder.caraberjalan.text = item?.caraBerjalan
+
         holder.view.setOnClickListener {
             itemClick.detail(item)
+        }
+
+        holder.btnHapus.setOnClickListener {
+            itemClick.hapus(item)
         }
     }
 
@@ -40,5 +46,7 @@ class AdapterHewan(val datahewan: List<DataItemHewan>?, val itemClick : OnClickL
 
     interface OnClickListener{
         fun detail(item: DataItemHewan?)
+
+        fun hapus(item: DataItemHewan?)
     }
 }

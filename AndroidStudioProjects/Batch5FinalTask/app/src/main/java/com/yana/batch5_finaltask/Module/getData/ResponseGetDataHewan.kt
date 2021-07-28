@@ -1,6 +1,8 @@
 package com.yana.batch5_finaltask.Module.getData
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
 data class ResponseGetDataHewan(
 
@@ -14,6 +16,7 @@ data class ResponseGetDataHewan(
 	val isSuccess: Boolean? = null
 )
 
+@Parcelize
 data class DataItemHewan(
 
 	@field:SerializedName("nama_hewan")
@@ -27,4 +30,4 @@ data class DataItemHewan(
 
 	@field:SerializedName("id")
 	val id: String? = null
-)
+): Parcelable
