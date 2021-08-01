@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object NetworkModule {
 
     fun getRetrofit(): Retrofit {
-        return Retrofit.Builder().baseUrl("http://192.168.53.77/finaltask_batch5/")
+        return Retrofit.Builder().baseUrl("http://192.168.224.77/finaltask_batch5/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

@@ -20,8 +20,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Nama Hewan"
-                android:textColor="#000"
-                />
+                android:textColor="#000" />
 
             <TextView
                 android:id="@+id/txtJenis"
@@ -54,11 +53,9 @@
                 android:src="@drawable/ic_delete" />
         </LinearLayout>
     </LinearLayout>
-    <view
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="5dp"
-        android:background="#000" />
-
-
+<!--    <view-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:background="#000" />-->
 </LinearLayout>

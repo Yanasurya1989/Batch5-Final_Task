@@ -27,7 +27,9 @@ class InputActivity : AppCompatActivity() {
         }
         when (btnSimpan.text) {
             "Update" -> {
-
+                btnSimpan.setOnClickListener {
+                    updateData(getDatahewan?.id, edtNamaHewan.text.toString(), edtJenis.text.toString(), edtJalan.text.toString())
+                }
             }
             else -> {
                 btnSimpan.setOnClickListener {

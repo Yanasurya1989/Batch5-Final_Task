@@ -18,10 +18,7 @@ class AdapterHewan(val datahewan: List<DataItemHewan>?, val itemClick : OnClickL
             val btnHapus = view.btnHapus
         }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): AdapterHewan.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_hewan, parent, false)
 
         return ViewHolder(view)

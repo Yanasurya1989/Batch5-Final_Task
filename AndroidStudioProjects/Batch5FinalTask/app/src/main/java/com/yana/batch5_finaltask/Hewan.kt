@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.yana.batch5_finaltask.Adapter.AdapterHewan
 import com.yana.batch5_finaltask.Config.NetworkModule
 import com.yana.batch5_finaltask.Module.action.ResponseAction
@@ -19,6 +21,8 @@ class Hewan : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hewan)
+
+        list_hewan.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.VERTICAL))
 
         fab.setOnClickListener {
             val intent = Intent(this, InputActivity::class.java)
